@@ -3,8 +3,8 @@ body {
 
 }
 
-.name {
-	font-weight: bold;
-	color: red;
+.cmd {
+	width: 200%;
+	height: 200%;
 	
 }

@@ -1,18 +1,13 @@
 {% include 'base.html' %}
-<div id="content">
-{% for name, message in chat %}
-<span class="name"> {{name}}</span>: {{message}} <br>
-{% endfor %}
-<br>
-<br>
-</div>
+
 <link rel="stylesheet" href="static/style.css">
 
-<form action="{{location}}" method="POST">
-  <label for="person">Name:</label><br>
-  <input type="text" id="name" name="name" value="Enter name here" class="name"><br>
+<form action="" method="POST">
+  <label for="command">Console Commands:</label><br>
+  <input type="text" id="command" name="command" value="Enter console commands here one at a time" class="cmd"><br>
+  {# drop down for endpoints#}
   <label for="message">Message:</label><br>
-  <input type="text" id="message" name="message" value="Enter message here" class="message"><br>
+  <input type="text" id="message" name="message" value="Enter message here" class="cmd"><br>
   <input type="submit" value="Submit">
 </form> 
 
