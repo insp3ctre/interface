@@ -5,10 +5,31 @@
 <form action="" method="POST">
   <label for="command">Console Commands:</label><br>
   <input type="text" id="command" name="command" value="Enter console commands here one at a time" class="cmd"><br>
-  {# drop down for endpoints#}
-  <label for="message">Message:</label><br>
+  <label for="python">Python Editor:</label><br>
+  <input type="text" id="python" name="python" value="" class="cmd"><br>
+ </form>
+ <div class="dropdown">
+  	<button class="dropbtn">Endpoints</button>
+  	<div class="dropdown-content">
+  		<a href="#">Small</a>
+  		<a href="#">Medium</a>
+  		<a href="#">Large</a>
+  		<a href="#">XLarge</a>
+  		<a href="#">GPU</a>
+  	</div>
+  </div>
+ <form> 
+  <label for="message">Results/Progress:</label><br>
   <input type="text" id="message" name="message" value="Enter message here" class="cmd"><br>
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit"><br>
+  <input type="submit" value="Upload/Download"> <!-- go to upload and download-->
 </form> 
+<br>
+<br>
+<form action="" method="POST">
+	<input type="submit" value="Upload"><br>
+	<input type="text" id="download" name="download" value="" class="download">
+	<input type="submit" value="Download">
+</form>
 
 {%include 'footer.html' %}
