@@ -1,10 +1,13 @@
-body {
-	background-color : pink;
-
+.cmd {
+	width: 500%;
+	height: 500%;
+	
 }
 
-.cmd {
-	width: 200%;
-	height: 200%;
-	
+.name {
+	color: blue;
+}
+
+.message {
+	color: purple;
 }
