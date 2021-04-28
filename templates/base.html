@@ -2,15 +2,16 @@
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="static/javascript.js"></script>
 <script>
 $(document).ready(function(){
-	window.setInterval(function(){
-		$.ajax({url: "/ajax", success: function(result){
-			$("#content").html(result);
+	$("#command_button").click(function(){
+		$.ajax({url: "/interface?command="+$("#command").val(), success: function(result){
+			$("#message").html(result);
 		}
 
 		});
-	}, 1000);
+	});
 
 });
 

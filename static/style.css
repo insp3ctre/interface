@@ -1,9 +1,28 @@
-.cmd {
-	width: 500%;
-	height: 500%;
-	
+body {
+	background-color: gray;
 }
 
-.python {
-	color: yellow;
+.console_cmd {
+	display: inline;
+	width: 30%;
+}
+
+.python_edit {
+	width: 30%
+	height: 300px;
+}
+
+.result_prog {
+	width: 30%
+	height: 300px;
+}
+
+.cmd_label {
+	display: inline;
+	text-align: left;
+}
+
+.python_label {
+	display: inline;
+	text-align: right;
 }

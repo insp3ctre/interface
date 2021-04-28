@@ -2,34 +2,42 @@
 
 <link rel="stylesheet" href="static/style.css">
 
-<form action="" method="POST">
-  <label for="command">Console Commands:</label><br>
-  <input type="text" id="command" name="command" value="Enter console commands here one at a time" class="cmd"><br>
-  <label for="python">Python Editor:</label><br>
-  <input type="text" id="python" name="python" value="" class="cmd"><br>
+<div>
+  <label for="command" class="cmd_label">Console Commands:</label><br> <!-- needs to be hooked up to ajax-->
+  <input type="text" id="command" name="command" value="Enter console commands here one at a time" class="console_cmd"><br>
+  <button id="command_button"><br><br>
+ </div>
+
+ <form action="" method="POST">
+  <label for="python" class="python_label">Python Editor:</label><br>
+  <input type="text" id="python" name="python" value="" class="python_edit"><br>
  </form>
- <div class="dropdown">
-  	<button class="dropbtn">Endpoints</button>
-  	<div class="dropdown-content">
-  		<a href="#">Small</a>
-  		<a href="#">Medium</a>
-  		<a href="#">Large</a>
-  		<a href="#">XLarge</a>
-  		<a href="#">GPU</a>
-  	</div>
-  </div>
- <form> 
+
+<form action="" method="POST">
+  <label for="endpoints">Select an endpoint:</label>
+  <select name="endpoints" id="endpoints">
+  	<option value="small">Small</option>
+  	<option value="medium">Medium</option>
+  	<option value="large">Large</option>
+  	<option value="xlarge">XLarge</option>
+  	<option value="gpu">GPU</option>
+  </select> <br>
+</form>
+
+<div>
   <label for="message">Results/Progress:</label><br>
-  <input type="text" id="message" name="message" value="Enter message here" class="cmd"><br>
-  <input type="submit" value="Submit"><br>
-  <input type="submit" value="Upload/Download"> <!-- go to upload and download-->
-</form> 
+  <textarea id="message" name="message" class="result_prog"> </textarea> <br><br>
+</div> 
+
 <br>
 <br>
 <form action="" method="POST">
-	<input type="submit" value="Upload"><br>
-	<input type="text" id="download" name="download" value="" class="download">
-	<input type="submit" value="Download">
+	
+	<button type="button" onclick="show_button()">Upload/Download</button>
+		<!--<label for="upload">Upload:</label>-->
+    <br><input type="file" value="Upload" style="display:none" class="updown"><br>
+		<input type="text" id="download" name="download" value="" class="updown" style="display:none">
+		<input type="submit" value="Download" style="display:none" class="updown">
 </form>
 
 {%include 'footer.html' %}
