@@ -1,5 +1,5 @@
 body {
-	background-color: gray;
+	background-color: lightgray;
 }
 
 .console_cmd {
@@ -20,6 +20,7 @@ body {
 .cmd_label {
 	display: inline;
 	text-align: left;
+	color
 }
 
 .python_label {
