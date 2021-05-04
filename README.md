@@ -1,4 +1,4 @@
-# Interface
+# BLT Web Interface
 
 ## Overview
 The primary objective of this project is to make BLT more usable and available to students, faculty, and staff. I decided to create an interface that someone could log in to, so they could send/view jobs to the endpoints as well as access their files. 
