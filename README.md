@@ -8,3 +8,6 @@ I gained some experience with using supercomputers, specifically BLT. While work
 
 ## What Comes Next
 The next steps in the project would be to integrate a database with the web interface to track and manage users. Other features that need to be implemented are transfering files to and from BLT as well as displaying statistics to administrators about the current use of BLT to help manage it.
+
+## Other Stuff
+Ben Glick was looking for a CS student to join his project, and that is how I became involved with this. He helps a lot, and he is teaching me along the way. 
